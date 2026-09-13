@@ -1,5 +1,7 @@
---extra-index-url https://gitlab.inria.fr/api/v4/projects/18692/packages/pypi/simple
-fbxsdkpy==2020.1.post2
+# shared-comfyui-patch:aarch64-hy-motion
+# The private FBX index is unnecessary on ARM64 because fbxsdkpy is skipped.
+# --extra-index-url https://gitlab.inria.fr/api/v4/projects/18692/packages/pypi/simple
+fbxsdkpy==2020.1.post2; platform_machine != "aarch64"
 
 torchdiffeq>=0.2.5
 transforms3d>=0.4.2
